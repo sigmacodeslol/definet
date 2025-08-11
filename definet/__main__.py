@@ -27,7 +27,7 @@ def main():
 
     word = args.word if args.word else ""
 
-    definet(single=args.word)
+    definet(single=word)
 
 
 if __name__ == "__main__":
