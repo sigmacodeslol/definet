@@ -42,11 +42,12 @@ def definet(*, single: str = ""):
 
     if single != "":
         defi.get(single)
+        return
 
     exit_key = "."
     print(f"type a word to see its info.. type {exit_key} to exit")
-    end = False
-    while not end:
+    while True:
         word = input("\n $ ").lower()
-        end = word == exit_key or end
+        if word == exit_key:
+            break
         defi.get(word)
