@@ -1,17 +1,12 @@
 [project]
 name = "definet"
-version = "0.1.1"
+version = "0.1.2"
 description = "a tool that will give you the definition of any word you like."
-authors = [
-    {name = "sigmacodeslol", email = "tcrrxzz@gmail.com"}
-]
+authors = [{ name = "sigmacodeslol", email = "tcrrxzz@gmail.com" }]
 license = "MIT"
 readme = "README.rst"
 requires-python = ">=3.12"
-dependencies = [
-    "pyenchant",
-    "requests"
-]
+dependencies = ["pyenchant", "requests"]
 
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
