@@ -15,11 +15,14 @@ class Definet:
             print(r.json())
 
 
-def definet(*, single: bool = False):
-    def get():
-        pass
-
+def definet(*, single: str = ""):
     defi = Definet()
+
+    def get(word: str):
+        defi.get(word)
+
+    if single != "":
+        get(single)
 
     exit_key = "(|=|)"
     print(f"type a word to see its info.. type {exit_key} to exit")
@@ -28,4 +31,4 @@ def definet(*, single: bool = False):
         word = input(" $ ")
         if word == exit_key:
             end = True
-        defi.get(word)
+        get(word)

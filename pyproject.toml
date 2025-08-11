@@ -1,6 +1,6 @@
 [project]
 name = "definet"
-version = "0.1.0"
+version = "0.1.1"
 description = "a tool that will give you the definition of any word you like."
 authors = [
     {name = "sigmacodeslol", email = "tcrrxzz@gmail.com"}
